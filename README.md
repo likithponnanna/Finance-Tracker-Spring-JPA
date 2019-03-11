@@ -1,2 +1,2 @@
-# whiteboard-pd-Server-likithponnanna-master
-Persistence Server 6
+# whiteboard-sp19-likithponnanna
+Spring Server
