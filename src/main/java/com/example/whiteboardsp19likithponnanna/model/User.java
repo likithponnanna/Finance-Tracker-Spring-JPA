@@ -1,8 +1,13 @@
 package com.example.whiteboardsp19likithponnanna.model;
+import javax.persistence.*;
 
 import java.util.List;
 
+@Entity
 public class User {
+  @Id
+  @GeneratedValue
+          (strategy=GenerationType.IDENTITY)
   private Long userId;
   private String username;
   private String password;
@@ -11,14 +16,18 @@ public class User {
   private String role;
   private  String email;
   private String phoneNo;
+  private List<Course> authoredCourses;
 
 
   public User() {
 
   }
 
+
   public User(Long userId, String username, String password, String firstName, String lastName
           , String role, String email, String phoneNo ) {
+
+
     this.userId = userId;
     this.username = username;
     this.firstName = firstName;

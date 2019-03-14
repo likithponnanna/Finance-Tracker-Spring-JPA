@@ -1,17 +1,23 @@
 package com.example.whiteboardsp19likithponnanna.model;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Course {
+  @Id
+  @GeneratedValue(strategy= GenerationType.IDENTITY)
 private Long  id;
 private  String title;
 private User user;
+  @OneToMany(mappedBy="course")
 private List<Module> modules;
 
   public Course() {
   }
 
   public Course(Long id, String title, User user,  List<Module> modules){
+    super();
     this.id = id;
     this.title = title;
     this.user = user;
@@ -49,4 +55,6 @@ private List<Module> modules;
   public void setModules(List <Module> modules) {
     this.modules = modules;
   }
+
+
 }

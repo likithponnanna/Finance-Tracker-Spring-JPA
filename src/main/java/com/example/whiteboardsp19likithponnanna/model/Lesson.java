@@ -1,11 +1,21 @@
 package com.example.whiteboardsp19likithponnanna.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Lesson {
+  @Id
+  @GeneratedValue(strategy= GenerationType.IDENTITY)
 private  Long id;
 private  String title;
+  @OneToMany(mappedBy="lesson")
 private List<Topic> topics;
+  @ManyToOne
+  @JsonIgnore
+  private Module module;
 
   public Lesson() {
   }
@@ -14,6 +24,11 @@ private List<Topic> topics;
     this.id = id;
     this.title = title;
     this.topics  = topics;
+  }
+
+  @Transient
+  public Long getModuleId() {
+    return module.getId();
   }
 
   public Long getId() {
