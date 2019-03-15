@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c809dc5c-d682-4a1b-9c7b-0cd48f9d880f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_8_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence-api-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/repositories/LinkWidgetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/HeadingWidgetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/ImageWidgetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/LinkWidgetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/ListWidgetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/ParagraphWidgetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/WidgetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Faculty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/HeadingWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/HeadingWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ImageWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ImageWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ListWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ListWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ParagraphWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/ParagraphWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/Widget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/YoutubeWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/model/LinkWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/repositories/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/repositories/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/repositories/WidgetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/repositories/WidgetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/LessonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/ModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/ModuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whiteboardsp19likithponnanna/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Faculty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Lesson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Module.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Module.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Topic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/model/Widget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/CourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/LessonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/LessonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/ModuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/ModuleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/whiteboardsp19likithponnanna/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/whiteboard-sp19-likithponnanna-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/whiteboard-sp19-likithponnanna-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/whiteboard-sp19-likithponnanna-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/whiteboard-sp19-likithponnanna-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiteboard-sp19-likithponnanna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/whiteboard-sp19-likithponnanna.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -273,7 +214,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553557451123" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553557773321" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -320,12 +261,12 @@
       <workItem from="1552697026278" duration="1977000" />
       <workItem from="1552780004951" duration="17848000" />
       <workItem from="1552882827126" duration="49695000" />
-      <workItem from="1553361077813" duration="35661000" />
+      <workItem from="1553361077813" duration="36038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105181000" />
+    <option name="totallyTimeSpent" value="105558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
