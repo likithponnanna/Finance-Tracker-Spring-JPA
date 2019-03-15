@@ -11,7 +11,7 @@ public class Module {
   @GeneratedValue(strategy= GenerationType.IDENTITY)
   private Long id;
   private  String title;
-  @OneToMany(mappedBy="module")
+  @OneToMany(mappedBy="module", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<Lesson> lessons;
   @ManyToOne
   @JsonIgnore
@@ -54,5 +54,13 @@ public class Module {
 
   public void setLessons(List <Lesson> lessons) {
     this.lessons = lessons;
+  }
+
+  public Course getCourse() {
+    return course;
+  }
+
+  public void setCourse(Course course) {
+    this.course = course;
   }
 }

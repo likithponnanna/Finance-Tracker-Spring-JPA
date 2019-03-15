@@ -9,6 +9,9 @@ public class Faculty extends User {
         this.tenured = tenured;
     }
 
+    public Faculty() {
+    }
+
     public Faculty(Long userId, String username, String password, String firstName, String lastName, String role, String email, String phoneNo, String office, boolean tenured) {
         super(userId, username, password, firstName, lastName, role, email, phoneNo);
         this.office = office;

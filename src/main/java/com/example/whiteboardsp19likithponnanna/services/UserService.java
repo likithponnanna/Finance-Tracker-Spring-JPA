@@ -7,6 +7,9 @@ import com.example.whiteboardsp19likithponnanna.model.Topic;
 import com.example.whiteboardsp19likithponnanna.model.User;
 import com.example.whiteboardsp19likithponnanna.model.Widget;
 
+import com.example.whiteboardsp19likithponnanna.repositories.CourseRepository;
+import com.example.whiteboardsp19likithponnanna.repositories.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,26 +29,49 @@ import javax.servlet.http.HttpSession;
 @CrossOrigin(origins = "*", allowCredentials= "true", allowedHeaders ="*")
 public class UserService  {
 
-  private User alice = new User((long) 123, "alice", "pass123", "Alice", "Wonderland", "FACULTY","def@gmail.com", "816225");
-  private User bob = new User((long) 234, "bob", "pass245", "Bob", "Marley", "FACULTY","new@gmail.com", "123141");
-  protected ArrayList <User> users = new ArrayList <>(Arrays.asList(alice, bob));
+  //private User alice = new User((long) 123, "alice", "pass123", "Alice", "Wonderland", "FACULTY","def@gmail.com", "816225");
+  //private User bob = new User((long) 234, "bob", "pass245", "Bob", "Marley", "FACULTY","new@gmail.com", "123141");
+  //protected ArrayList <User> users = new ArrayList <>(Arrays.asList(alice, bob));
 
-
+  @Autowired
+  UserRepository userRepository;
 
 
   @PostMapping("/api/register")
   public User register(@RequestBody User user,
                        HttpSession session) {
-    session.setAttribute("currentUser", user);
-    users.add(user);
-    return user;
+
+//    users.add(user);
+//    return user;
+    for (User u:userRepository.findAll()){
+      if (u.getUsername().equals(user.getUsername())){
+        User dup = new User();
+        dup.setUsername("duplicate_777");
+        dup.setUserId((long) 1111);
+        return dup;
+      }
+    }
+
+    int randomInt = (int)(1000.0 * Math.random());
+    user.setUserId((long) randomInt);
+    User test = userRepository.save(user);
+
+
+    session.setAttribute("currentUser", test);
+
+    return test;
+
+
   }
 
   @GetMapping("/api/profile")
   public User profile(HttpSession session) {
     User currentUser = (User)
             session.getAttribute("currentUser");
-    return currentUser;
+    if(currentUser !=null){
+      return userRepository.findById(currentUser.getUserId()).get();
+    }
+    return new User();
   }
 
 
@@ -53,7 +79,7 @@ public class UserService  {
   @PostMapping("/api/login")
   public User login(@RequestBody User credentials,
                       HttpSession session) {
-    for (User user : users) {
+    for (User user : userRepository.findAll()) {
       if( user.getUsername().equals(credentials.getUsername())
               && user.getPassword().equals(credentials.getPassword())) {
         session.setAttribute("currentUser", user);
@@ -66,64 +92,59 @@ public class UserService  {
   @PostMapping("/api/logout")
   public void logout
           (HttpSession session) {
+    session.removeAttribute("currentUser");
     session.invalidate();
   }
 
 
   @GetMapping("/api/users")
   public ArrayList <User> findAllUsers(HttpSession session) {
-    return users;
+
+    return (ArrayList<User>) userRepository.findAll();
   }
 
   @GetMapping("/api/users/{id}")
   public User findUserById(@PathVariable("id") Long id,  HttpSession session) {
-    for (int i = 0; i < users.size(); i++) {
-      if (id.equals(users.get(i).getUserId())) {
-        return users.get(i);
-      }
-    }
-    return new User();
+  return userRepository.findById(id).get();
   }
 
   @PostMapping("/api/users")
   public User createUser(@RequestBody User user) {
-    users.add(user);
-    return user;
+
+    return userRepository.save(user);
   }
 
   @DeleteMapping("/api/delete/{userId}")
   public void deleteUser(@PathVariable("userId") Long id) {
-    for (int i = 0; i < users.size(); i++) {
-      if (users.get(i).getUserId().equals(id)) {
-        users.remove(i);
-      }
-    }
+
+    userRepository.deleteById(id);
   }
 
   @PutMapping("/api/update/{id}")
   public User updateUser(@PathVariable("id") Long id, @RequestBody User user) {
-    for (int i = 0; i <= users.size(); i++) {
-      if (users.get(i).getUserId().equals(id)) {
+    User dbUser = userRepository.findById(id).get();
+
+      if (dbUser.getUserId().equals(id)) {
         if (user.getPassword() != null) {
-          users.get(i).setPassword(user.getPassword());
+          dbUser.setPassword(user.getPassword());
         }
         if (user.getFirstName() != null) {
-          users.get(i).setFirstName(user.getFirstName());
+          dbUser.setFirstName(user.getFirstName());
         }
         if (user.getLastName() != null) {
-          users.get(i).setLastName(user.getLastName());
+          dbUser.setLastName(user.getLastName());
         }
         if (user.getUsername() != null) {
-          users.get(i).setUsername(user.getUsername());
+          dbUser.setUsername(user.getUsername());
         }
         if (user.getRole() != null) {
-          users.get(i).setRole(user.getRole());
+          dbUser.setRole(user.getRole());
         }
 
 
-        return users.get(i);
+        return userRepository.save(user);
       }
-    }
+
     return new User();
   }
 
@@ -137,7 +158,7 @@ public class UserService  {
 
     ArrayList <User> tempUser = new ArrayList <>();
 
-    tempUser.addAll(users);
+    //tempUser.addAll(users);
 
     if (!user.getUsername().equals("")) {
       for (int i = 0; i < tempUser.size(); i++) {
@@ -188,7 +209,7 @@ public class UserService  {
     }
 
 
-    System.out.println(tempUser);
+    //System.out.println(tempUser);
 
     return tempUser;
   }

@@ -9,6 +9,9 @@ public class Student extends User {
         this.scholarship = scholarship;
     }
 
+    public Student() {
+    }
+
     public Student(Long userId, String username, String password, String firstName, String lastName, String role, String email, String phoneNo, Integer gradYear, Long scholarship) {
         super(userId, username, password, firstName, lastName, role, email, phoneNo);
         this.gradYear = gradYear;

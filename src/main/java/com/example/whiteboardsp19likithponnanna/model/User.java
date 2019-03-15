@@ -16,6 +16,7 @@ public class User {
   private String role;
   private  String email;
   private String phoneNo;
+  @OneToMany(mappedBy="user", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<Course> authoredCourses;
 
 
@@ -107,7 +108,13 @@ public class User {
     this.lastName = lastName;
   }
 
+  public List<Course> getAuthoredCourses() {
+    return authoredCourses;
+  }
 
+  public void setAuthoredCourses(List<Course> authoredCourses) {
+    this.authoredCourses = authoredCourses;
+  }
 
   public String getRole() {
     if (role == null) {

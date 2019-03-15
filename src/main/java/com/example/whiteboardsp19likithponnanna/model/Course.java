@@ -1,5 +1,7 @@
 package com.example.whiteboardsp19likithponnanna.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -9,20 +11,21 @@ public class Course {
   @GeneratedValue(strategy= GenerationType.IDENTITY)
 private Long  id;
 private  String title;
+  @ManyToOne()
+  @JsonIgnore
 private User user;
-  @OneToMany(mappedBy="course")
+  @OneToMany(mappedBy="course", cascade = CascadeType.ALL, orphanRemoval = true)
 private List<Module> modules;
 
   public Course() {
   }
 
-  public Course(Long id, String title, User user,  List<Module> modules){
-    super();
-    this.id = id;
+  public Course(String title, User user, List<Module> modules) {
     this.title = title;
     this.user = user;
     this.modules = modules;
   }
+
 
   public Long getId() {
     return id;

@@ -1,20 +1,42 @@
 package com.example.whiteboardsp19likithponnanna.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 
+@Entity
+@OnDelete(action = OnDeleteAction.CASCADE)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Widget {
+  @Id
+  @GeneratedValue
+          (strategy= GenerationType.IDENTITY)
   private Long id;
-  private String wType;
+  private String type;
+  private Integer orderId;
   private Integer height;
   private Integer width;
+  @ManyToOne
+  @JsonIgnore
+  private Topic topic;
 
+  public Topic getTopic() {
+    return topic;
+  }
+
+  public void setTopic(Topic topic) {
+    this.topic = topic;
+  }
 
   public Widget() {
   }
 
   public Widget(Long id, String wType, Integer height, Integer width) {
     this.id = id;
-    this.wType = wType;
+    this.type = wType;
     this.height = height;
     this.width = width;
   }
@@ -27,12 +49,12 @@ public class Widget {
     this.id = id;
   }
 
-  public String getwType() {
-    return wType;
+  public String getType() {
+    return type;
   }
 
-  public void setwType(String wType) {
-    this.wType = wType;
+  public void setType(String type) {
+    this.type = type;
   }
 
   public Integer getHeight() {
@@ -49,5 +71,13 @@ public class Widget {
 
   public void setWidth(Integer width) {
     this.width = width;
+  }
+
+  public Integer getOrderId() {
+    return orderId;
+  }
+
+  public void setOrderId(Integer orderId) {
+    this.orderId = orderId;
   }
 }

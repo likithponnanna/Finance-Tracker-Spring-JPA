@@ -1,10 +1,18 @@
 package com.example.whiteboardsp19likithponnanna.model;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.Entity;
 
 @Entity
+@OnDelete(action = OnDeleteAction.CASCADE)
 public class ImageWidget extends Widget {
     private String src;
+    private String iName;
+
+    public ImageWidget() {
+    }
 
     public ImageWidget(String src) {
         this.src = src;
@@ -21,5 +29,13 @@ public class ImageWidget extends Widget {
 
     public void setSrc(String src) {
         this.src = src;
+    }
+
+    public String getiName() {
+        return iName;
+    }
+
+    public void setiName(String iName) {
+        this.iName = iName;
     }
 }
